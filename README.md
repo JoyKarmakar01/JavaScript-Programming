@@ -5,7 +5,7 @@ Welcome to your journey to becoming an expert in JavaScript programming! This sy
 ## 🟢 Foundation Level
 
 ### Basics of JavaScript 🌐
-- 🔹 Introduction to JavaScript and setting up the environment
+- 🔹 Introduction to JavaScript and setting up the environment[](1.Introduction.html)
 - 🔹 Basic syntax and data types (number, string, boolean, null, undefined, symbol)
 - 🔹 Variables (var, let, const) and scope
 - 🔹 Input and output
