@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Example 1: Handling a Button Click -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Event</title>
+</head>
+<body>
+    <button id="my-button">Click Me!</button>
+    <p id="message"></p>
+
+    <script>
+        // JavaScript code will go here
+        // Access the button and message elements
+            let button = document.getElementById('my-button');
+            let message = document.getElementById('message');
+
+            // Function to run when the button is clicked
+            function handleClick() {
+                message.textContent = 'Button was clicked!';
+            }
+
+            // Attach the event listener to the button
+            button.addEventListener('click', handleClick);
+
+    </script>
+</body>
+</html>

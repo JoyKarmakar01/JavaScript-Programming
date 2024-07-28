@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="main-title">Hello, World!</h1>
+    <button id="change-text-button">Change Text</button>
+
+    <script>
+        let title = document.getElementById('main-title');
+        let button = document.getElementById('change-text-button');
+
+        // Change the title text and style
+        title.textContent = 'Welcome to the DOM!';
+        title.style.color = 'blue';
+
+        // Add a new paragraph
+        let newParagraph = document.createElement('p');
+        newParagraph.textContent = 'This paragraph was added with JavaScript.';
+        document.body.appendChild(newParagraph);
+
+        // Change title text on button click
+        button.addEventListener('click', function() {
+            title.textContent = 'You clicked the button!';
+        });
+    </script>
+</body>
+</html>
+
+

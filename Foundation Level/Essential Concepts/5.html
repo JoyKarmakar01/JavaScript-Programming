@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Example 2: Handling Mouseover and Mouseout Events -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Event</title>
+    <style>
+        #color-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-box"></div>
+
+    <script>
+        // Access the color box element
+        let colorBox = document.getElementById('color-box');
+
+        // Function to change color on mouseover
+        function changeColor() {
+            colorBox.style.backgroundColor = 'lightgreen';
+        }
+
+        // Function to reset color on mouseout
+        function resetColor() {
+            colorBox.style.backgroundColor = 'lightblue';
+        }
+
+        // Attach event listeners
+        colorBox.addEventListener('mouseover', changeColor);
+        colorBox.addEventListener('mouseout', resetColor);
+
+    </script>
+</body>
+</html>
